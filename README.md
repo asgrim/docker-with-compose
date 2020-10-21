@@ -1,11 +1,14 @@
-[![Build Status](https://travis-ci.com/tiangolo/docker-with-compose.svg?branch=master)](https://travis-ci.com/tiangolo/docker-with-compose)
+[https://hub.docker.com/repository/docker/asgrim/docker-with-compose](https://hub.docker.com/repository/docker/asgrim/docker-with-compose)
 
-## Supported tags and respective `Dockerfile` links
+## Tags
 
  * 19.03.1
  * 19.03.13
 
 # Building & tagging
 
- * `docker build -t asgrim/docker-with-compose:19.03.13 .`
- * `docker push asgrim/docker-with-compose:19.03.13`
+ * `export TAG_VERSION=19.03.13` (update this)
+ * `docker build -t asgrim/docker-with-compose:$TAG_VERSION .`
+ * `docker push asgrim/docker-with-compose:$TAG_VERSION`
+ * `git tag -s $TAG_VERSION`
+ * `git push && git push origin $TAG_VERSION`
